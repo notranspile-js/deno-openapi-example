@@ -2,9 +2,9 @@
 
 Example of the [Deno](https://deno.com/) HTTP API setup that can generate (collect from snippets) an [OpenAPI](https://www.openapis.org/what-is-openapi) specification, uses the following:
 
- - [Fresh](https://fresh.deno.dev/docs/introduction) for HTTP routing/handling
- - [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc) for generating OpenAPI spec from YAML snippets ([example](https://github.com/notranspile-js/deno-openapi-example/blob/master/routes/api/test1.yaml))
- - [ReDoc](https://github.com/Redocly/redoc) to display the OpenAPI spec
+ - [Fresh](https://fresh.deno.dev/docs/introduction): for HTTP routing/handling
+ - [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc): for generating OpenAPI spec from YAML snippets ([example](https://github.com/notranspile-js/deno-openapi-example/blob/master/routes/api/test1.yaml))
+ - [ReDoc](https://github.com/Redocly/redoc): to display the OpenAPI spec
 
 ### Usage
 
