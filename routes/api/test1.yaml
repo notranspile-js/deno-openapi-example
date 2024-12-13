@@ -1,0 +1,24 @@
+/api/test1:
+  get:
+    description: Welcome to swagger-jsdoc!
+    parameters:
+      - in: path
+        name: userId
+        schema:
+          type: integer
+        required: true
+        description: Numeric ID of the user to get
+    responses:
+      "200":
+        description: A User object
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  description: The user ID.
+                username:
+                  type: string
+                  description: The user name.
