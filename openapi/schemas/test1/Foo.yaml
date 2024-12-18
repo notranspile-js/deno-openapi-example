@@ -1,0 +1,13 @@
+description: Test response
+type: object
+required:
+  - foo
+  - bar
+properties:
+  foo:
+    description: foo property
+    type: integer
+  bar:
+    description: bar property
+    type: string
+    minLength: 0

@@ -1,17 +1,13 @@
 # Deno OpenAPI example
 
-Example of the [Deno](https://deno.com/) HTTP API setup that can generate (collect from snippets) an [OpenAPI](https://www.openapis.org/what-is-openapi) specification, uses the following:
-
- - [Fresh](https://fresh.deno.dev/docs/introduction): for HTTP routing/handling
- - [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc): for generating OpenAPI spec from YAML snippets ([example](https://github.com/notranspile-js/deno-openapi-example/blob/master/routes/api/test1.yaml))
- - [ReDoc](https://github.com/Redocly/redoc): to display the OpenAPI spec
+Example of the [Deno](https://deno.com/) HTTP API setup that can generate (collect from snippets) an [OpenAPI](https://www.openapis.org/what-is-openapi) specification. Uses [Fresh](https://fresh.deno.dev/docs/introduction) and [ReDoc](https://github.com/Redocly/redoc).
 
 ### Usage
 
 Generate the static `openapi.json` file:
 
 ```
-deno run -A ./openapi.ts
+deno run -A ./openapi/genSpec.ts
 ```
 
 Start the server in development mode with a watcher:
@@ -26,7 +22,7 @@ Start the server normally:
 deno run -A main.ts
 ```
 
-ReDoc web page will be available at `http://localhost:8000/doc.html`.
+ReDoc web page will be available at `http://localhost:8000/apidoc.html`.
 
 ### License information
 

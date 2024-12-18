@@ -1,0 +1,14 @@
+description: Error caused by an unexpected problem
+type: object
+required:
+  - error
+  - reference
+properties:
+  error:
+    description: Error message
+    type: string
+    minLength: 1
+  reference:
+    description: Unique identifier of a problematic request
+    type: string
+    minLength: 1

@@ -3,14 +3,16 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_404 from "./routes/_404.ts";
-import * as $api_test1 from "./routes/api/test1.ts";
+import * as $api_foo from "./routes/api/foo.ts";
+import * as $api_test1_bar from "./routes/api/test1/bar.ts";
 
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
     "./routes/_404.ts": $_404,
-    "./routes/api/test1.ts": $api_test1,
+    "./routes/api/foo.ts": $api_foo,
+    "./routes/api/test1/bar.ts": $api_test1_bar,
   },
   islands: {},
   baseUrl: import.meta.url,
